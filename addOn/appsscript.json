@@ -18,7 +18,11 @@
       }
     },
     "sheets": {},
-    "docs": {},
+    "docs": {
+      "homepageTrigger": {
+        "runFunction": "onOpen"
+      }
+    },
     "slides": {},
     "drive": {},
     "calendar": {},

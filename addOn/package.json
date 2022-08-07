@@ -1,7 +1,7 @@
 {
-  "name": "Google-Workspace-Addon-Boilerplate",
+  "name": "print-labels",
   "version": "2.1.0",
-  "description": "Google Apps Script Boilerplate",
+  "description": "Print labels with most common formats",
   "scripts": {
     "login": "clasp login",
     "setup": "rm -rf .clasp.json && clasp create --type standalone --title 'My Google Workspace Addon' && clasp setting rootDir ./dist",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "firestore-parser": "^0.9.0",
     "gas-client": "^0.1.0",
@@ -30,10 +31,10 @@
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@google/clasp": "^2.3.0",
+    "@types/google-apps-script": "^1.0.41",
     "@types/node": "^14.14.21",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
-    "@types/google-apps-script": "^1.0.41",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-add-module-exports": "^1.0.2",
@@ -50,7 +51,6 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-import-resolver-typescript": "^2.3.0",
-    "eslint-loader": "^3.0.4",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-googleappsscript": "^1.0.3",
     "eslint-plugin-json": "^2.1.2",
