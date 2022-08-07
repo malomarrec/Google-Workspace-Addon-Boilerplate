@@ -5,6 +5,8 @@ import * as db from "./db"
 
 declare const global: any
 
+export let onOpen = (e: any) => common.createCatCard("good morning", true)
+
 // COMMON
 global.onOpen = (e: any) => common.createCatCard("good morning", true)
 global.createCatCard = common.createCatCard
